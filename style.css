@@ -1,0 +1,49 @@
+body {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;    
+  justify-content: center;
+}
+
+.circle {
+  animation: circle 4s;
+  background: #ED8409;
+  clip-path: circle(100%);
+  height: 100%;
+  width: 1400px;
+  
+}
+.circle>h1 {
+  color: white;
+  font-family: sans-serif;
+  padding-top: 25%;
+  padding-left: 25%;    
+  width: 800px;
+  }
+
+
+@keyframes circle {
+  0% { clip-path: circle(0%);
+  background: rgba(237, 132, 9, 0.01);    
+    }
+  5% { clip-path: circle(5%);
+    background: rgba(237, 132, 9, 0.05);
+    }
+  15% { clip-path: circle(15%);
+    background: rgba(237, 132, 9, 0.15);
+    } 
+  25% { clip-path: circle(25%);
+    background: rgba(237, 132, 9, 0.25);
+    }  
+  50% { clip-path: circle(50%);
+    background: rgba(237, 132, 9, 0.5);
+    }
+  75% { clip-path: circle(75%); 
+    background: rgba(237, 132, 9, 0.75);
+    }
+  100% { clip-path: circle(100%); }
+}
+
+
+
